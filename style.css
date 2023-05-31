@@ -350,6 +350,19 @@
     display: none;
   }
 
+
+/*-----------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------*/
+
+
 /* Box Sizing */
 
 :root {
@@ -363,6 +376,7 @@
 }
 
 
+
 /* Base Typography */
 :root {
     --font-family-base: 'Open Sans', sans-serif;
@@ -374,18 +388,72 @@
     font-family: var(--font-family-base);
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
-    background-color: var(--color2);
   }
   
   /* Colors */
   :root {
-    --color1: hsl(228, 71.43%, 93.14%);
-    --color2: hsl(212.2, 53.25%, 84.9%);
-    --color3: hsl(208.36, 48.67%, 77.84%);
-    --color4: hsl(29.19, 40.22%, 36.08%);
-    --color5: hsl(214.14, 54.72%, 20.78%);
+    --color1: #E1E6FA;
+    --color2: #C4D7ED;
+    --color3: #ABC8E2;
+    --color4: #815b37;
+    --color5: #183152;
+    --color6: #37815b;
+
+    --color1-rgb: 225, 230, 250;
+    --color2-rgb: 196, 215, 237;
+    --color3-rgb: 171, 200, 226;
+    --color4-rgb: 129, 91, 55;
+    --color5-rgb: 24, 49, 82;
+    --color6-rgb: 55, 129, 91;
+
+
+    --bs-body-color: var(--color1);
+    --bs-body-color-rgb: var(--color1-rgb);
+    --bs-body-bg: var(--color5);
+    --bs-body-bg-rgb: var(--color5-rgb);
+    --bs-info: var(--color4);
+    --bs-info-rgb: var(--color4-rgb);
+    --bs-primary: var(--color6);
+    --bs-primary-rgb: var(--color6-rgb);
   }
-  
+
+  .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), .7);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), .7);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: rgba(var(--bs-primary-rgb), .8);
+    --bs-btn-active-border-color: rgba(var(--bs-primary-rgb), .8);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
+
+.btn-outline-info {
+    --bs-btn-color: var(--bs-info);
+    --bs-btn-border-color: var(--bs-info);
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: var(--bs-info);
+    --bs-btn-hover-border-color: var(--bs-info);
+    --bs-btn-focus-shadow-rgb: 13,202,240;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: var(--bs-info);
+    --bs-btn-active-border-color: var(--bs-info);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--bs-info);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--bs-info);
+    --bs-gradient: none;
+}
+  [data-bs-theme="dark"] {
+    /* CSS variable overrides for dark mode */
+  }
+
   /* Spacing and Layout */
   :root {
     --spacing-1: 1px;
@@ -398,12 +466,26 @@
   /* Typography for Headers and Paragraphs */
   h1, h2 {
     font-family: 'Roboto', sans-serif;
+    color: var(--color1);
+
   }
   
   h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
+    color: var(--color1);
+
+  }
+
+  p {
+    color: var(--color1);
+  }
+
+  a {
+    color: var(--color1);
+    text-decoration: none;
   }
   
+
   /* Common Component Styles */
   /* Add styles for common components such as buttons, form elements, etc. */
   
