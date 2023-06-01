@@ -26,16 +26,16 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="./index.html">Home</a>
               </li>
-              <li class="nav-item" data-section="about-section">
-                <a class="nav-link" href="#about-section">About</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
               </li>
-              <li class="nav-item" data-section="projects-section">
-                <a class="nav-link" href="#projects-section">Projects</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
               </li>
-              <li class="nav-item" data-section="footer-section">
-                <a class="nav-link" href="#footer-section">Credits</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Credits</a>
               </li>
               <!-- Add more menu items as needed -->
             </ul>
@@ -52,7 +52,7 @@
         <div class="col-lg-6 mx-auto">
           <p class="lead mb-4">Have a glance at the different projects I've been working on since I started on the Full-Stack Engineer course on <a href="https://codecademy.com" target="_blank"><u>Codecademy</u></a></p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" data-section="projects-section">Projects</button>
+            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Projects</button>
             <button type="button" class="btn btn-outline-info btn-sm px-4">
                 <a class="" target="_blank" href="https://github.com/NicoNyga">GitHub</a>
             </button>
@@ -65,9 +65,10 @@
         </div>
       </div>
 
-      <div id="about-section" class="container text-center my-5 section">
+      <div id="about" class="container text-center my-5">
         <h2>Self-thaught developer</h2>
         
+      </div>
       <figure class=" container">
         <div class="row">          
             <blockquote class="blockquote text-start my-auto col-md-6">
@@ -85,18 +86,9 @@
             </div>
       </div>
     </figure>
-  </div>
-
-
-    <div class="section" id="projects-section">
-      <div>
-        <p>Blah blah blah</p>
-      </div>
-
-    </div>
 </main>
 
-<footer id="footer-section" class="section">
+<footer id="footer">
   <div class="border-top container-fluid">
   <div class="container align-text-bottom">
     <div class="my-5">
@@ -135,55 +127,10 @@
 </div>
 </footer>
     
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
-crossorigin="anonymous">
-</script>
     <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
     crossorigin="anonymous">
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(document).ready(function() {
-
-        $('#projects-section').hide();
-
-        // Handle navigation when a menu item is clicked
-        $('.nav-link, .btn[data-section]').click(function(e) {
-          e.preventDefault();
-    
-          // Get the target section from the href attribute
-          var targetSection = $(this).attr('href');
-    
-          // Scroll to the about section or footer section based on the target section
-          if (targetSection === '#about-section') {
-            $('html, body').animate({
-              scrollTop: $(targetSection).offset().top
-            }, 500);
-            // Hide the projects section and show all other sections
-            $('#projects-section').hide();
-            $('.section').not('#projects-section').show();
-          } else if (targetSection === '#footer-section') {
-            $('html, body').animate({
-              scrollTop: $(targetSection).offset().top
-            }, 500);
-          } else if (targetSection === '#projects-section') {
-            // Hide the about section and show the projects section
-            $('#about-section').hide();
-            $('#projects-section').show();
-          } else {
-            // Show all sections except the projects section
-            $('#projects-section').hide();
-            $('.section').not('#projects-section').show();
-          }
-        });
-      });
-    </script>
-    
-    
-    
 </body>
 </html>

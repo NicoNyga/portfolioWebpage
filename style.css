@@ -493,6 +493,14 @@
     border-left: 1px solid var(--color1);
     padding-left: 10px;
   }
+
+  .section {
+    display: block;
+  }
+
+  #projects-section {
+    display: none;
+  }
   /* Responsive Design */
   /* Add media query breakpoints and utility classes for responsive styling */
   /* Media query breakpoints */
