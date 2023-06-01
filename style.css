@@ -465,12 +465,12 @@
   
   /* Typography for Headers and Paragraphs */
   h1, h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--color1);
 
   }
   
-  h3, h4, h5, h6 {
+  h3, h4, h5, h6, .navbar-brand {
     font-family: 'Montserrat', sans-serif;
     color: var(--color1);
 
@@ -481,6 +481,7 @@
   }
 
   a {
+    font-family: 'Montserrat', sans-serif;
     color: var(--color1);
     text-decoration: none;
   }
@@ -488,7 +489,10 @@
 
   /* Common Component Styles */
   /* Add styles for common components such as buttons, form elements, etc. */
-  
+  .border-left {
+    border-left: 1px solid var(--color1);
+    padding-left: 10px;
+  }
   /* Responsive Design */
   /* Add media query breakpoints and utility classes for responsive styling */
   /* Media query breakpoints */
