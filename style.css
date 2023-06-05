@@ -521,6 +521,7 @@
   .hide-on-small {
     display: none;
   }
+
   
   /* Example: Show an element only on small screens */
   .show-on-small {
