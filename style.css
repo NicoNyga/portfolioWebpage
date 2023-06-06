@@ -454,6 +454,24 @@
     /* CSS variable overrides for dark mode */
   }
 
+
+  .card {
+    height: 100%;
+  }
+  
+  .card .row {
+    height: 100%;
+  }
+  
+  .card .col-6 {
+    height: 100%;
+  }
+  
+  .card .img-fluid {
+    height: 100%;
+    object-fit: cover;
+  }
+
   /* Spacing and Layout */
   :root {
     --spacing-1: 1px;
@@ -494,12 +512,37 @@
     padding-left: 10px;
   }
 
+  .skills-container {
+    font-size: 2rem;
+  }
   .section {
     display: block;
   }
-
+  
   #projects-section {
     display: none;
+  }
+
+  .fab, .fas {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+  }
+
+  .image-container img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
   /* Responsive Design */
   /* Add media query breakpoints and utility classes for responsive styling */
