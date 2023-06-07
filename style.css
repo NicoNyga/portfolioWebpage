@@ -450,6 +450,17 @@
     --bs-btn-disabled-border-color: var(--bs-info);
     --bs-gradient: none;
 }
+
+.btn-link {
+  text-decoration: none;
+  color: var(--bs-body-color);
+}
+
+.btn-link:hover {
+  color: var(--bs-body-color)!important;
+}
+
+
   [data-bs-theme="dark"] {
     /* CSS variable overrides for dark mode */
   }
@@ -467,11 +478,6 @@
     height: 100%;
   }
   
-  .card .img-fluid {
-    height: 100%;
-    object-fit: cover;
-  }
-
   /* Spacing and Layout */
   :root {
     --spacing-1: 1px;
@@ -488,7 +494,7 @@
 
   }
   
-  h3, h4, h5, h6, .navbar-brand {
+  h3, h4, .navbar-brand {
     font-family: 'Montserrat', sans-serif;
     color: var(--color1);
 
@@ -528,7 +534,8 @@
     margin-bottom: 20px;
   }
 
-  .image-container {
+
+  /* .image-container {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -543,7 +550,7 @@
     height: 100%;
     top: 0;
     left: 0;
-  }
+  } */
   /* Responsive Design */
   /* Add media query breakpoints and utility classes for responsive styling */
   /* Media query breakpoints */
